@@ -1,0 +1,29 @@
+{
+  "name": "proseccojs",
+  "version": "1.0.0",
+  "description": "The premier meetup for Prosecco and Javascript-lovers in London.",
+  "main": "api/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proseccojs/proseccojs.git"
+  },
+  "keywords": [
+    "prosecco",
+    "javascript",
+    "london",
+    "meetup"
+  ],
+  "author": "@msmichellegar @wallcrawler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/proseccojs/proseccojs/issues"
+  },
+  "homepage": "https://github.com/proseccojs/proseccojs#readme",
+  "dependencies": {
+    "hapi": "^8.8.0",
+    "jquery": "^2.1.4"
+  }
+}
