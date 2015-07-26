@@ -1,0 +1,62 @@
+* {
+  border: none;
+  font-family: Source Sans Pro;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ffffff;
+  height: 500px;
+  width: 1600px;
+}
+
+.intro {
+  background-color: #f7df1e;
+  font-size: 18px;
+  padding: 50px;
+  text-align: center;
+}
+
+.meetup {
+  background-color: #ffffff;
+  padding: 50px;
+  text-align: center;
+}
+
+.organisers {
+  background-color: #f7df1e;
+  text-align: center;
+  padding: 50px;
+}
+
+.organisers > h1 {
+  text-align: center;
+}
+
+.organisers > p {
+  max-width: 240px;
+  text-align: center;
+}
+
+.profile {
+  display: inline-block;
+  padding: 0 10px 30px 10px;
+}
+
+.profile-pic {
+  opacity: 1;
+  filter:alpha(opacity=100);
+  width: 240px;
+  height: 240px;
+}
+
+.profile-pic:hover {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.social-icon {
+  height: 25px;
+  width: 25px;
+}
