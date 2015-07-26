@@ -4,6 +4,7 @@
   "description": "The premier meetup for Prosecco and Javascript-lovers in London.",
   "main": "api/server.js",
   "scripts": {
+    "go": "foreman run nodemon api/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
