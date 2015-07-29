@@ -2,7 +2,7 @@ var Hapi = require('hapi'),
     server = new Hapi.Server();
 
 server.connection({
-  port: 8000
+  port: process.env.PORT
 });
 
 server.route(require('./routes.js'));
