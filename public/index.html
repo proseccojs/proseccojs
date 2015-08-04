@@ -11,18 +11,20 @@
   <body>
     <div class="navbar">
        <ul>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Contact</a></li>
+         <li><a href="#intro">About</a></li>
+         <li><a href="#contact">Contact</a></li>
        </ul>
     </div>
     <div class="header">
       <img src="static/images/proseccojs-logo.png" />
     </div>
-    <div class="intro">
-      <p>Prosecco.js is the premier meetup for JavaScript and Prosecco-lovers in London. We run boozy networking socials for JavaScript developers to meet over sparkling wine.</p>
+    <div class="intro" id="intro">
+      <p>Prosecco.js is the premier meetup for JavaScript and Prosecco-lovers in London. We run networking socials for JavaScript developers to meet over sparkling wine.</p>
     </div>
     <div class="meetup">
       <a href="http://www.meetup.com/Prosecco-js/"><button type="button">JOIN OUR MEETUP GROUP</button></a>
+    </div>
+    <div class="meetup-pix">
     </div>
     <div class="organisers">
       <h1>Organised by</h1>
@@ -48,7 +50,7 @@
     </div>
     <div class="sponsorship">
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <a href="#contact-form"><button type="button" class="contact-button">CONTACT US</button></a>
       <form id="contact-form" action="http://formspree.io/msmichellegar@gmail.com" method="POST">
         <input type="text" name="_replyto" placeholder="Your email" class="email" />
