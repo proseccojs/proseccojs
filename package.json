@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/proseccojs/proseccojs#readme",
   "dependencies": {
-    "hapi": "^8.8.0"
+    "hapi": "^8.8.0",
+    "request": "^2.60.0"
   }
 }

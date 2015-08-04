@@ -6,7 +6,7 @@ module.exports = [
     path: '/',
     handler: handlers.home
   },
-  
+
   {
     method: 'GET',
     path: '/static/{path*}',
@@ -15,5 +15,12 @@ module.exports = [
         path: './'
       }
     }
+  },
+
+  {
+    method: 'GET',
+    path: '/pix',
+    handler: handlers.pix
   }
+
 ];
