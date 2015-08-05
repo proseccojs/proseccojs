@@ -1,4 +1,4 @@
-var meetup = require('./meetup.js');
+// var meetup = require('./meetup.js');
 
 module.exports = {
 
