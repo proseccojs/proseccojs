@@ -6,14 +6,14 @@ module.exports = {
     reply.file('./public/index.html');
   },
 
-  pix: function(request, reply) {
-    // var url = meetup.makeUrlMeetup();
-    // console.log(url);
-    // var meetupData = meetup.meetupGetRequest(url, function (data) {
-    //   console.log(data);
-    // });
-    // reply(meetupData);
-    reply(true);
-  }
+  // pix: function(request, reply) {
+  //   // var url = meetup.makeUrlMeetup();
+  //   // console.log(url);
+  //   // var meetupData = meetup.meetupGetRequest(url, function (data) {
+  //   //   console.log(data);
+  //   // });
+  //   // reply(meetupData);
+  //   reply(true);
+  // }
 
 };

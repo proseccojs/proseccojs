@@ -9,7 +9,8 @@
     "coverage": "istanbul cover ./node_modules/tape/bin/tape ./test/*.js && istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
     "jshint": "jshint .",
     "open-coverage": "open ./coverage/lcov-report/index.html",
-    "nodemon": "nodemon server.js"
+    "nodemon": "nodemon server.js",
+    "codeclimate": "CODECLIMATE_REPO_TOKEN=14a83b1956a40594c172ee8868b431702b19aa1fe0b536846d6962e3fe0740e6 codeclimate-test-reporter < ./coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -37,5 +38,10 @@
     "jshint": "^2.8.0",
     "nodemon": "^1.4.0",
     "tape": "^4.0.3"
-  }
+  },
+  "pre-commit": [
+    "jshint",
+    "coverage",
+    "codeclimate"
+  ]
 }
