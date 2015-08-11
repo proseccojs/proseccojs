@@ -27,7 +27,7 @@
 
 .header {
   background-attachment: fixed;
-  background-image: url("http://bedfordandbowery.com/wp-content/uploads/2014/09/DSC_7152.jpg");
+  background-image: url("../images/header-image.jpg");
   background-position: center center;
   background-size: cover;
   color: white;
@@ -108,11 +108,6 @@
   width: 240px;
 }
 
-.profile-pic:hover {
-  opacity: 0.3;
-  filter: alpha(opacity=30);
-}
-
 .imageHolder {
   background-color: black;
   height: 250px;
@@ -151,7 +146,7 @@
   display: none;
 }
 
-  #contact-form input {
+  #contact-form input, #contact-form textarea {
     display: block;
     font-size: 20px;
     margin: 15px auto;
@@ -187,4 +182,28 @@
   border: 1px solid black;
   color: black;
   cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+
+    #contact-form .email, #contact-form .message {
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #contact-form .email, #contact-form .message {
+        width: 250px;
+    }
 }
