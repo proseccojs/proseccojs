@@ -4,7 +4,7 @@
   "description": "The premier meetup for Prosecco and Javascript-lovers in London.",
   "main": "api/server.js",
   "scripts": {
-    "go": "foreman run nodemon api/server.js",
+    "start": "nf run nodemon api/server.js",
     "test": "./node_modules/tape/bin/tape ./test/*.js | npm run coverage && npm run jshint",
     "coverage": "istanbul cover ./node_modules/tape/bin/tape ./test/*.js && istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
     "jshint": "jshint .",
@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/proseccojs/proseccojs#readme",
   "dependencies": {
+    "foreman": "^1.4.1",
     "hapi": "^8.8.0",
     "request": "^2.60.0"
   },
