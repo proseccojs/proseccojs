@@ -17,10 +17,10 @@ module.exports = [
     }
   },
 
-  // {
-  //   method: 'GET',
-  //   path: '/pix',
-  //   handler: handlers.pix
-  // }
+  {
+    method: 'GET',
+    path: '/loadMeetupImages',
+    handler: handlers.loadMeetupImages
+  }
 
 ];

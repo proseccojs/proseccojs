@@ -1,4 +1,4 @@
-// var meetup = require('./meetup.js');
+var meetup = require('./meetup.js');
 
 module.exports = {
 
@@ -6,14 +6,11 @@ module.exports = {
     reply.file('./public/index.html');
   },
 
-  // pix: function(request, reply) {
-  //   // var url = meetup.makeUrlMeetup();
-  //   // console.log(url);
-  //   // var meetupData = meetup.meetupGetRequest(url, function (data) {
-  //   //   console.log(data);
-  //   // });
-  //   // reply(meetupData);
-  //   reply(true);
-  // }
+  loadMeetupImages: function(request, reply) {
+    var url = meetup.makeMeetupUrl();
+    meetup.requestMeetupImages(url, function(data) {
+      reply(data);
+    });
+  }
 
 };

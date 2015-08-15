@@ -51,6 +51,11 @@
   text-align: center;
 }
 
+.meetupPics {
+  height: 50px;
+  width: 50px;
+}
+
 .meetup {
   background-attachment: fixed;
   background-image: url("../images/header2.png");

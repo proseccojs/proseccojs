@@ -1,13 +1,13 @@
-// $(document).ready(function () {
-//   $.get('/pix', function(data) {
-//     console.log("hello");
-//     if(data) {
-//       console.log(data);
-//     } else {
-//       console.log("no data");
-//     }
-//   });
-// });
+(function() {
+  $.get('/loadMeetupImages', function(data) {
+    var appendDom = '';
+    data = JSON.parse(data);
+    data.results.forEach(function(result) {
+      appendDom += '<img class="meetupPics" src="' + result.photo.thumb_link + '" />';
+    });
+    $('#meetup-pics').append(appendDom);
+  });
+})();
 
 $('body').on('click', '#organisers > a', function() {
   $("#organisers-button").hide();
