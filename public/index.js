@@ -20,3 +20,14 @@ $('body').on('click', '.contact > a', function() {
   $("#contact-button").hide();
   $("#contact-form").fadeIn("slow");
 });
+
+$('.submitContactForm').click(function() {
+  // add form validation here?
+  var email = $('.contactFormEmail').val();
+  var content = $('.contactFormMessage').val();
+  $.post('/sendContactForm', {email: email, content: content}, function(response) {
+    $('#contact-form').fadeOut('slow', function() {
+      $('#contact-form').replaceWith('<p>Thanks for your input.</p>');
+    });
+  });
+});

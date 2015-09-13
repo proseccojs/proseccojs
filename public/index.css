@@ -27,7 +27,7 @@
 
 .header {
   background-attachment: fixed;
-  background-image: url("../images/header-image.jpg");
+  background-image: url("./images/header-image.jpg");
   background-position: center center;
   background-size: cover;
   color: white;
@@ -58,7 +58,7 @@
 
 .meetup {
   background-attachment: fixed;
-  background-image: url("../images/header2.png");
+  background-image: url("./images/header2.png");
   background-position: center center;
   background-size: cover;
   height: 200px;

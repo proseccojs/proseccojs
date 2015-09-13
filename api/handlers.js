@@ -1,6 +1,7 @@
 'use strict';
 
 var meetup = require('./meetup.js');
+var email = require('./email.js');
 
 module.exports = {
 
@@ -13,6 +14,11 @@ module.exports = {
     meetup.requestMeetupImages(url, function(data) {
       reply(data);
     });
+  },
+
+  sendContactForm: function(request, reply) {
+    email(request.payload.email, request.payload.content);
+    reply.close();
   }
 
 };

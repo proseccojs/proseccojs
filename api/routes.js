@@ -14,7 +14,7 @@ module.exports = [
     path: '/static/{path*}',
     handler:  {
       directory: {
-        path: './'
+        path: './public/'
       }
     }
   },
@@ -23,6 +23,12 @@ module.exports = [
     method: 'GET',
     path: '/loadMeetupImages',
     handler: handlers.loadMeetupImages
+  },
+
+  {
+    method: 'POST',
+    path: '/sendContactForm',
+    handler: handlers.sendContactForm
   }
 
 ];
