@@ -1,3 +1,5 @@
+'use strict';
+
 var test = require("tape"),
   server = require("../api/server.js"),
   fs = require("fs");

@@ -1,5 +1,6 @@
+'use strict';
+
 var http = require('http');
-var request = require('request');
 
 module.exports = {
   makeMeetupUrl: function() {

@@ -1,3 +1,5 @@
+'use strict';
+
 (function() {
   $.get('/loadMeetupImages', function(data) {
     var appendDom = '';

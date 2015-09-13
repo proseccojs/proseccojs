@@ -1,3 +1,5 @@
+'use strict';
+
 var meetup = require('./meetup.js');
 
 module.exports = {
