@@ -1,0 +1,10 @@
+@import 'base/base';
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'components/fonts';
+@import 'components/buttons';
+@import 'components/navbar';
+
+* {
+    background-color: red;
+}

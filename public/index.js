@@ -5,9 +5,9 @@
     var appendDom = '';
     data = JSON.parse(data);
     data.results.forEach(function(result) {
-      appendDom += '<img class="meetupPics" src="' + result.photo.thumb_link + '" />';
+      appendDom += '<img class="meetup-pics" src="' + result.photo.thumb_link + '" />';
     });
-    $('#meetup-pics').append(appendDom);
+    $('.meetup-pics-container').append(appendDom);
   });
 })();
 

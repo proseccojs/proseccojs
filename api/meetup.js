@@ -4,7 +4,7 @@ var http = require('http');
 
 module.exports = {
   makeMeetupUrl: function() {
-    return "http://api.meetup.com/2/members?&sign=true&photo-host=public&group_urlname=Prosecco-js&page=30&api&key=" + process.env.MEETUP_API;
+    return "http://api.meetup.com/2/members?&sign=true&photo-host=public&group_urlname=Prosecco-js&page=38&api&key=" + process.env.MEETUP_API;
   },
 
   requestMeetupImages: function(url, callback) {
