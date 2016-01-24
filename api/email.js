@@ -1,6 +1,6 @@
 'use strict';
 
-var mandrill = require("mandrill-api/mandrill");
+var mandrill = require('mandrill-api/mandrill');
 var mandrillClient = new mandrill.Mandrill(process.env.MANDRILL_API);
 
 module.exports = function(email, content) {
@@ -8,7 +8,7 @@ module.exports = function(email, content) {
    'from_email': email,
    'to': [{
      'email': process.env.ADMIN_EMAIL,
-     'name': 'ProseccoJS Person',
+     'name': 'Prosecco.js Person',
      'type': 'to'
     }],
    'autotext': 'true',
@@ -16,8 +16,15 @@ module.exports = function(email, content) {
    'html': content
   };
 
-  mandrillClient.messages.send({"message": data, "async": false}, function(result) {
-  }, function(e) {
-    console.log("Error " + e.message);
-  });
+  mandrillClient.messages.send(
+    {
+      'message': data,
+      'async': false
+    }, 
+    function(result) {
+    },
+    function(e) {
+      console.log('Error ' + e.message);
+    }
+  );
 };

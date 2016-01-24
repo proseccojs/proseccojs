@@ -27,7 +27,7 @@
 
 .header {
   background-attachment: fixed;
-  background-image: url("./images/header-image.jpg");
+  background-image: url('./images/header-image.jpg');
   background-position: center center;
   background-size: cover;
   color: white;
@@ -37,11 +37,15 @@
   width: 100%;
 }
 
-  .header > img {
-    height: 300px;
-    padding: 200px 0 0 0;
-    width: 300px;
-  }
+.header img {
+  height: 300px;
+  padding: 200px 0 0 0;
+  width: 300px;
+}
+
+.header img {
+  cursor: default;
+}
 
 .intro {
   background-color: #f7df1e;
@@ -58,31 +62,32 @@
 
 .meetup {
   background-attachment: fixed;
-  background-image: url("./images/header2.png");
+  background-image: url('./images/header2.png');
   background-position: center center;
   background-size: cover;
   height: 200px;
   text-align: center;
 }
 
-  .meetup button {
-    background-color: black;
-    border: 1px solid #f7df1e;
-    letter-spacing: 6px;
-    color: white;
-    font-size: 150%;
-    font-weight: bold;
-    margin: 70px;
-    padding: 10px 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+.meetup button {
+  background-color: black;
+  /*border: 1px solid #f7df1e;*/
+  border: 1px solid black;
+  letter-spacing: 6px;
+  color: white;
+  font-size: 150%;
+  font-weight: bold;
+  margin: 70px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
-  .meetup button:hover {
-    background-color: #f7df1e;
-    color: black;
-    cursor: pointer;
-  }
+.meetup button:hover {
+  background-color: #f7df1e;
+  color: black;
+  cursor: pointer;
+}
 
 #organisers-content {
   display: none;
@@ -94,15 +99,15 @@
   text-align: center;
 }
 
-  #organisers > h1 {
-    padding-bottom: 30px;
-    text-align: center;
-  }
+#organisers > h1 {
+  padding-bottom: 30px;
+  text-align: center;
+}
 
-  #organisers > p {
-    max-width: 240px;
-    text-align: center;
-  }
+#organisers > p {
+  max-width: 240px;
+  text-align: center;
+}
 
 .profile {
   display: inline-block;
@@ -133,7 +138,7 @@
 
 .display-button {
   background-color: black;
-  border: 1px solid white;
+  border: 1px solid black;
   letter-spacing: 6px;
   color: white;
   font-size: 150%;
@@ -155,11 +160,11 @@
   display: none;
 }
 
-  #contact-form input, #contact-form textarea {
-    display: block;
-    font-size: 20px;
-    margin: 15px auto;
-  }
+#contact-form input, #contact-form textarea {
+  display: block;
+  font-size: 20px;
+  margin: 15px auto;
+}
 
 .email {
   height: 50px;
@@ -194,25 +199,23 @@
 }
 
 footer {
-    padding: 20px;
+  padding: 20px;
 }
 
 footer a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
-
-    #contact-form .email, #contact-form .message {
-        width: 400px;
-    }
+  #contact-form .email, #contact-form .message {
+    width: 400px;
+  }
 }
 
 @media (max-width: 450px) {
-
-    #contact-form .email, #contact-form .message {
-        width: 250px;
-    }
+  #contact-form .email, #contact-form .message {
+    width: 250px;
+  }
 }
