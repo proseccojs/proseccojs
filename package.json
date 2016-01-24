@@ -1,10 +1,10 @@
 {
   "name": "proseccojs",
   "version": "1.0.0",
-  "description": "The premier meetup for Prosecco and Javascript-lovers in London.",
+  "description": "The premier meetup for Prosecco and JavaScript-lovers in London.",
   "main": "index.js",
   "scripts": {
-    "dev": "nf run nodemon index.js",
+    "dev": "nodemon --debug index.js",
     "start": "node index.js",
     "test": "./node_modules/tape/bin/tape ./test/*.js | npm run coverage && npm run jshint",
     "coverage": "istanbul cover ./node_modules/tape/bin/tape ./test/*.js && istanbul check-coverage --statements 20 --functions 3 --lines 20 --branches 20",
@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/proseccojs/proseccojs#readme",
   "dependencies": {
-    "foreman": "^1.4.1",
     "hapi": "^8.8.0",
     "mandrill-api": "^1.0.45",
     "request": "^2.60.0"
@@ -43,8 +42,6 @@
     "tape": "^4.0.3"
   },
   "pre-commit": [
-    "jshint",
-    "coverage",
-    "codeclimate"
+    "jshint"
   ]
 }
