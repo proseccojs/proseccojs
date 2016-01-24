@@ -1,4 +1,7 @@
-// var meetup = require('./meetup.js');
+'use strict';
+
+var meetup = require('./meetup.js');
+var email = require('./email.js');
 
 module.exports = {
 
@@ -6,14 +9,16 @@ module.exports = {
     reply.file('./public/index.html');
   },
 
-  // pix: function(request, reply) {
-  //   // var url = meetup.makeUrlMeetup();
-  //   // console.log(url);
-  //   // var meetupData = meetup.meetupGetRequest(url, function (data) {
-  //   //   console.log(data);
-  //   // });
-  //   // reply(meetupData);
-  //   reply(true);
-  // }
+  loadMeetupImages: function(request, reply) {
+    var url = meetup.makeMeetupUrl();
+    meetup.requestMeetupImages(url, function(data) {
+      reply(data);
+    });
+  },
+
+  sendContactForm: function(request, reply) {
+    email(request.payload.email, request.payload.content);
+    reply.close();
+  }
 
 };

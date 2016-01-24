@@ -1,5 +1,7 @@
+'use strict';
+
 var test = require("tape"),
-  server = require("../api/server.js"),
+  server = require("../index.js"),
   fs = require("fs");
 
 test("Check that index.html is sent when requested and returns 200 status code", function(t) {

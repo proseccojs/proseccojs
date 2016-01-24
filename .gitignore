@@ -29,6 +29,7 @@ node_modules
 #env in meetup
 /api/meetup.js
 meetup.js
+.env
 
 # Coverage
 coverage

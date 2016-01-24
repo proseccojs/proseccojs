@@ -1,3 +1,5 @@
+'use strict';
+
 var handlers = require('./handlers.js');
 
 module.exports = [
@@ -12,15 +14,21 @@ module.exports = [
     path: '/static/{path*}',
     handler:  {
       directory: {
-        path: './'
+        path: './public/'
       }
     }
   },
 
-  // {
-  //   method: 'GET',
-  //   path: '/pix',
-  //   handler: handlers.pix
-  // }
+  {
+    method: 'GET',
+    path: '/loadMeetupImages',
+    handler: handlers.loadMeetupImages
+  },
+
+  {
+    method: 'POST',
+    path: '/sendContactForm',
+    handler: handlers.sendContactForm
+  }
 
 ];
